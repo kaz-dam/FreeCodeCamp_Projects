@@ -1,0 +1,205 @@
+body {
+  font-family: "Indie Flower", cursive;
+  font-weight: 300;
+  font-size: 2.2em;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons {
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.quote-wrap {
+  width: 50%;
+  height: 500px;
+  position: relative;
+  top: 150px;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-radial-gradient(#ffffff, #aaaaaa);
+  background: radial-gradient(#ffffff, #aaaaaa);
+}
+.wrapper .generate-quote {
+  margin: 15px 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.wrapper .generate-quote:last-child {
+  width: 60px;
+}
+.wrapper .generate-quote:hover {
+  background-color: #fdfbfb;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.wrapper #tweet {
+  text-decoration: none;
+  color: #333;
+}
+.wrapper #next-quote {
+  cursor: pointer;
+}
+.wrapper .quote {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  overflow: auto;
+  padding: 5px 45px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+.wrapper .quote:nth-child(2) {
+  z-index: 10;
+}
+.wrapper .quote:last-child {
+  z-index: 1;
+}
+.wrapper .quote .footer {
+  text-align: right;
+  font-style: italic;
+}
+.wrapper .quote i {
+  font-size: 2.5em;
+  opacity: 0.2;
+  position: relative;
+}
+.wrapper .quote i:first-child {
+  top: 30px;
+  left: -12px;
+}
+
+.animate-lift {
+  -webkit-animation: lift 1s ease-out forwards;
+          animation: lift 1s ease-out forwards;
+}
+
+.animate-slide {
+  -webkit-animation: slide 1.5s ease-out forwards;
+          animation: slide 1.5s ease-out forwards;
+}
+
+@-webkit-keyframes lift {
+  0% {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    z-index: 10;
+  }
+  50% {
+    box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    z-index: 1;
+    opacity: 0;
+  }
+}
+
+@keyframes lift {
+  0% {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    z-index: 10;
+  }
+  50% {
+    box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    z-index: 1;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1, 1) translateY(0%);
+            transform: scale(1, 1) translateY(0%);
+    opacity: 0;
+    z-index: 1;
+  }
+  5% {
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.02, 1.02) translateY(110%);
+            transform: scale(1.02, 1.02) translateY(110%);
+    opacitiy: 1;
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0%);
+            transform: scale(1, 1) translateY(0%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    z-index: 10;
+  }
+}
+@keyframes slide {
+  0% {
+    box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1, 1) translateY(0%);
+            transform: scale(1, 1) translateY(0%);
+    opacity: 0;
+    z-index: 1;
+  }
+  5% {
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.02, 1.02) translateY(110%);
+            transform: scale(1.02, 1.02) translateY(110%);
+    opacitiy: 1;
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0%);
+            transform: scale(1, 1) translateY(0%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    z-index: 10;
+  }
+}
