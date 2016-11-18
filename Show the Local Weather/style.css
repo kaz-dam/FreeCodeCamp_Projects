@@ -1,0 +1,313 @@
+body {
+  color: #525252;
+  height: 100vh;
+  background: -webkit-linear-gradient(#E4F6F8, #62C2CC);
+  background: linear-gradient(#E4F6F8, #62C2CC);
+  font-family: "Taviraj", serif;
+}
+body p, body i.fa {
+  font-size: 2em;
+  font-weight: 300;
+}
+body .sun {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #FDB813;
+  position: fixed;
+  top: -150px;
+  left: -150px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-animation: sun 2s ease-in-out infinite;
+          animation: sun 2s ease-in-out infinite;
+}
+body .moon {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #EEE6AB;
+  position: fixed;
+  top: -150px;
+  left: -150px;
+}
+body .moon .shadow {
+  width: 40px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #C5BC8E;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  position: fixed;
+  top: 40px;
+  left: 25px;
+}
+body .rain {
+  position: fixed;
+  top: 110px;
+  left: 0;
+  width: 5000px;
+  height: 50px;
+}
+body .rain span {
+  display: inline-block;
+  width: 5px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: white;
+  margin-right: 80px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-animation: rain 0.8s ease-in-out infinite;
+          animation: rain 0.8s ease-in-out infinite;
+}
+body .snow {
+  position: fixed;
+  top: 110px;
+  left: 0;
+  width: 5000px;
+  height: 50px;
+}
+body .snow span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 80px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-animation: snow 3s ease-in-out infinite;
+          animation: snow 3s ease-in-out infinite;
+}
+body .clouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+body .clouds .first-row {
+  width: 5000px;
+  position: fixed;
+  top: -125px;
+  z-index: 10;
+}
+body .clouds .first-row span {
+  display: inline-block;
+  width: 450px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: -150px;
+}
+body .clouds .second-row {
+  width: 5000px;
+  position: fixed;
+  top: -125px;
+  z-index: 9;
+}
+body .clouds .second-row span {
+  display: inline-block;
+  width: 450px;
+  height: 270px;
+  border-radius: 50%;
+  background-color: #a5a5a5;
+  margin-right: -150px;
+}
+body .hide {
+  display: none;
+}
+body .broken-clouds {
+  background: -webkit-linear-gradient(#E4F6F8, #6c898c) !important;
+  background: linear-gradient(#E4F6F8, #6c898c) !important;
+}
+body .night-sky {
+  background: -webkit-linear-gradient(#301860, #001848) !important;
+  background: linear-gradient(#301860, #001848) !important;
+}
+body .animate-cloud-first-row span {
+  -webkit-animation: clouds 3s ease-in-out infinite;
+          animation: clouds 3s ease-in-out infinite;
+}
+body .animate-cloud-second-row span {
+  -webkit-animation: clouds 4s ease-in-out infinite;
+          animation: clouds 4s ease-in-out infinite;
+}
+
+.weather-info {
+  margin-top: 60px;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.main-heading {
+  margin-top: 220px;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.temp span:last-child {
+  color: #F17022;
+}
+
+.toggle i {
+  color: #F17022;
+}
+
+@media screen and (max-width: 700px) {
+  .main-heading {
+    font-size: 2em;
+  }
+
+  body p, body i.fa {
+    font-size: 1.5em;
+  }
+}
+@-webkit-keyframes sun {
+  0% {
+    width: 300px;
+    height: 300px;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+  50% {
+    width: 290px;
+    height: 290px;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+}
+@keyframes sun {
+  0% {
+    width: 300px;
+    height: 300px;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+  50% {
+    width: 290px;
+    height: 290px;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+}
+@-webkit-keyframes clouds {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes clouds {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes rain {
+  0% {
+    -webkit-transform: translate(0) rotate(30deg);
+            transform: translate(0) rotate(30deg);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-15px, 50px) rotate(30deg);
+            transform: translate(-15px, 50px) rotate(30deg);
+  }
+}
+@keyframes rain {
+  0% {
+    -webkit-transform: translate(0) rotate(30deg);
+            transform: translate(0) rotate(30deg);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-15px, 50px) rotate(30deg);
+            transform: translate(-15px, 50px) rotate(30deg);
+  }
+}
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(-20px, 20px);
+            transform: translate(-20px, 20px);
+  }
+  50% {
+    -webkit-transform: translate(20px, 40px);
+            transform: translate(20px, 40px);
+  }
+  75% {
+    -webkit-transform: translate(-20px, 60px);
+            transform: translate(-20px, 60px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(20px, 80px);
+            transform: translate(20px, 80px);
+    opacity: 0;
+  }
+}
+@keyframes snow {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(-20px, 20px);
+            transform: translate(-20px, 20px);
+  }
+  50% {
+    -webkit-transform: translate(20px, 40px);
+            transform: translate(20px, 40px);
+  }
+  75% {
+    -webkit-transform: translate(-20px, 60px);
+            transform: translate(-20px, 60px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(20px, 80px);
+            transform: translate(20px, 80px);
+    opacity: 0;
+  }
+}
