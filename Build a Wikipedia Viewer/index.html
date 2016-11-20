@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="WikiSearch">
+<head>
+	<meta charset="UTF-8">
+	<title>Build a Wikipedia Viewer</title>
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div ng-controller="MainController as vm" class="wrapper">
+	  <div class="container text-center">
+	    <div class="row first-row">
+	      <div class="col-xs-12">
+	        <h1>Search Wiki Articles</h1>
+	      </div>
+	    </div>
+	    <div class="row second-row">
+	      <div class="col-xs-12 search-field">
+	        <div class="input">
+	          <input ng-model="vm.query" ng-focus="vm.animation()" ng-blur="vm.animateBack()" ng-change="vm.getQueryText()" ng-model-options="{debounce: 1000}"/><span ng-class="vm.animateText">Start searching..</span>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row third-row">
+	      <div class="col-xs-12"><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Get Random Article</a></div>
+	    </div>
+	    <div class="row fourth-row">
+	      <div class="col-xs-12">
+	        <ul>
+	          <li ng-repeat="article in vm.articles"><a href="{{article.link}}" target="_blank" class="results">
+	              <h3>{{article.title}}</h3>
+	              <p>{{article.detail}}</p></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
