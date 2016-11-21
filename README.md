@@ -9,3 +9,7 @@ The first of the intermediate front-end projects. I've used the WikiQuote API to
 ### Local Weather App
 
 The API for the weather data was from [openweathermap.org](http://openweathermap.org/). Some CSS3 animation has been used representing the current local weather visually.
+
+### Wikipedia viewer
+
+First FCC project where i used only Angular as javascript framework. Using almost the same API as for the random quote project, but this was easier. This time the extra tool wasn't necessary to make requests to this API.
