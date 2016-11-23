@@ -13,3 +13,5 @@ The API for the weather data was from [openweathermap.org](http://openweathermap
 ### Wikipedia viewer
 
 First FCC project where i used only Angular as javascript framework. Using almost the same API as for the random quote project, but this was easier. This time the extra tool wasn't necessary to make requests to this API.
+
+### Twitch.tv stream viewer
