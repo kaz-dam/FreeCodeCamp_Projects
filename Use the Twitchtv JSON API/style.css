@@ -1,0 +1,102 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ecf0f1;
+}
+.wrapper .heading {
+  background-color: #2ecc71;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
+  margin-bottom: 25px;
+  color: #eee;
+}
+.wrapper .streams {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  margin-bottom: 20px;
+  max-width: 960px;
+  border-radius: 5px;
+  font-size: 1.6em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.wrapper .streams .row:last-child {
+  display: none;
+}
+.wrapper .streams .channel-name {
+  padding: 15px 0;
+}
+.wrapper .streams .logo {
+  width: 60px;
+  height: 100%;
+  padding-top: 8px;
+  background-position: center;
+}
+.wrapper .streams .logo span {
+  font-size: 1.4em;
+  margin: 0 auto;
+  color: #D50000;
+}
+.wrapper .streams .logo .livestream {
+  color: #00C853 !important;
+  -webkit-animation: live 2s ease-in-out infinite;
+          animation: live 2s ease-in-out infinite;
+}
+.wrapper .streams .channel-status {
+  margin-bottom: 20px;
+}
+.wrapper .streams .channel-status p {
+  font-size: 14px !important;
+}
+.wrapper .streams .channel-status .streamLink {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #00BCD4;
+  color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.wrapper .streams .channel-status .streamLink:hover {
+  background-color: #00838F;
+}
+.wrapper .streams .channel-logo {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .streamdetail {
+  display: block !important;
+}
+
+@-webkit-keyframes live {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes live {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

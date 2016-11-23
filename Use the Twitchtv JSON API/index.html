@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Twitch">
+<head>
+	<meta charset="UTF-8">
+	<title>Use the Twitchtv JSON API</title>
+</head>
+<body>
+  <div ng-controller="TwitchController as vm" class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 heading">
+          <h3>Twitch Streams</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div ng-repeat="stream in vm.streams" class="col-sm-12 col-lg-10 col-lg-offset-1">
+          <div ng-click="vm.streamDetails(stream)" class="streams">
+            <div class="row">
+              <div class="col-xs-2 col-md-offset-2 col-xs-offset-1">
+                <div class="logo"><span ng-class="{livestream: stream.stream}"><i class="fa fa-video-camera"></i></span></div>
+              </div>
+              <div class="col-xs-2 col-md-offset-4 col-xs-offset-2">
+                <div class="channel-name"><span>{{stream.channelName ? stream.channelName : stream.message}}</span></div>
+              </div>
+            </div>
+            <div ng-class="{streamdetail: vm.showDetails[vm.streams.indexOf(stream)]}" class="row">
+              <div class="col-md-3 col-xs-4 col-md-offset-2 col-xs-offset-1">
+                <div style="background-image:url('{{stream.stream.channel.logo}}')" class="channel-logo"></div>
+              </div>
+              <div class="col-md-3 col-xs-4 col-md-offset-3 col-xs-offset-2">
+                <div class="channel-status">
+                  <p>{{stream.stream.channel.game}}</p>
+                  <p>{{stream.stream.channel.status}}</p><a href="{{stream.stream.channel.url}}" target="_blank" class="streamLink">Watch the Stream</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
