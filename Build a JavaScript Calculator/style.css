@@ -1,0 +1,131 @@
+.container {
+  width: 350px;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 15vh;
+  overflow: hidden;
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.top-section {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 4em;
+  width: 100%;
+  height: 180px;
+  background: -webkit-linear-gradient(#2a2a34, #535367, #2a2a34);
+  background: linear-gradient(#2a2a34, #535367, #2a2a34);
+  border-bottom: 2px solid #eee;
+}
+.top-section .display-rim {
+  width: 82%;
+  height: 75px;
+  background-color: #6c6f78;
+  padding: 10px;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.top-section .display-rim .display {
+  width: 90%;
+  height: 75px;
+  background-color: #81837e;
+  margin: 0 auto;
+  border: 2px solid #000;
+  text-align: right;
+}
+.top-section .display-rim .display .chars {
+  display: block;
+  -webkit-transform: translate(-10px, -8px);
+          transform: translate(-10px, -8px);
+  letter-spacing: -10px;
+}
+.top-section .display-rim .display .operationsInfo {
+  display: block;
+  letter-spacing: -4px;
+  -webkit-transform: translate(-8px, -23px);
+          transform: translate(-8px, -23px);
+  font-size: 24px !important;
+}
+.top-section .solar-panel {
+  width: 125px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 0 auto;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  border: 2px solid #333;
+  background-color: #4e4546;
+}
+.top-section .solar-panel span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  -webkit-transform: translateY(-22px);
+          transform: translateY(-22px);
+  border-right: 1px solid #aaa;
+}
+.top-section .solar-panel span:nth-child(2) {
+  -webkit-transform: translate(-15px, -22px);
+          transform: translate(-15px, -22px);
+}
+
+.bottom-section {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  background: -webkit-linear-gradient(#dfdfe1, #c5c5c7, #dfdfe1);
+  background: linear-gradient(#dfdfe1, #c5c5c7, #dfdfe1);
+  width: 100%;
+  height: 400px;
+}
+.bottom-section .buttons {
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  width: 80%;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+}
+.bottom-section .buttons .button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #000;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.6);
+  background: -webkit-linear-gradient(#65666b, #6f7076, #65666b);
+  background: linear-gradient(#65666b, #6f7076, #65666b);
+}
+.bottom-section .buttons .button span {
+  display: inline-block;
+  margin-top: 10px;
+}
+.bottom-section .buttons .operations {
+  background: -webkit-linear-gradient(#18171c, #4e4c57, #18171c);
+  background: linear-gradient(#18171c, #4e4c57, #18171c);
+}
+.bottom-section .buttons .del {
+  background: -webkit-linear-gradient(#88122c, #a91536, #88122c);
+  background: linear-gradient(#88122c, #a91536, #88122c);
+}
+.bottom-section .buttons .zero {
+  width: 118px;
+  -webkit-transform: translate(-34px, -63px);
+          transform: translate(-34px, -63px);
+}
+.bottom-section .buttons .dot {
+  -webkit-transform: translate(-34px, -63px);
+          transform: translate(-34px, -63px);
+}
+.bottom-section .buttons .plus {
+  height: 118px;
+}
+
+.clicked {
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.8) !important;
+}
