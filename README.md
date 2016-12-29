@@ -4,7 +4,7 @@ In this repository i will upload the projects from FreeCodeCamp that i've comple
 
 ### Random Quote Machine
 
-The first of the intermediate front-end projects. I've used the WikiQuote API to get the random quotes from movies i like much. Thumbs up goes to Nate Tyler for his [wikiquotes-api](https://github.com/natetyler/wikiquotes-api/).
+The first of the intermediate front end projects. I've used the WikiQuote API to get the random quotes from movies i like much. Thumbs up goes to Nate Tyler for his [wikiquotes-api](https://github.com/natetyler/wikiquotes-api/).
 
 ### Local Weather App
 
@@ -17,3 +17,7 @@ First FCC project where i used only Angular as javascript framework. Using almos
 ### Twitch.tv stream viewer
 
 Made again with Angular because it's fun to work with it. The Twitch.tv API was used to get data from certain users/streamers and show some data about them. Are they currently streaming, what they're streaming etc.
+
+### Javascript Calculator
+
+With this one started the advanced front end projects part. Didn't used any fancy stuff. Design is based on the classic Casio calculators and made only with CSS. Other than that the JS is simple and functional type using jQuery to make DOM manipulation easier. As an extra (this wasn't a task), added event listeners to the buttons that could be used for this "app".
