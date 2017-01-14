@@ -21,3 +21,8 @@ Made again with Angular because it's fun to work with it. The Twitch.tv API was 
 ### Javascript Calculator
 
 With this one started the advanced front end projects part. Didn't used any fancy stuff. Design is based on the classic Casio calculators and made only with CSS. Other than that the JS is simple and functional type using jQuery to make DOM manipulation easier. As an extra (this wasn't a task), added event listeners to the buttons that could be used for this "app".
+
+### Pomodoro Clock
+
+I've designed the clock according to the famous clock from the movie Groundhog Day. You know pomodoro clock is also looping around just like the movie.
+So the look was made only with CSS. Used some almost matching fonts from [GoogleFonts](https://fonts.google.com/) for the displayed numbers and for the manufacturer logo (which begins with Pana...haha). For the JS part i've used only jQuery to make DOM searches and some tasks easier.

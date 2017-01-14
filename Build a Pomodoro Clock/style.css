@@ -1,0 +1,473 @@
+body {
+  background: -webkit-radial-gradient(#dbd7d7, #e7e5e5);
+  background: radial-gradient(#dbd7d7, #e7e5e5);
+}
+
+.pomosonic {
+  background: -webkit-linear-gradient(315deg, #fff 60%, #d8d8d8 20%);
+  background: linear-gradient(-225deg, #fff 60%, #d8d8d8 20%);
+  width: 600px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.pomosonic .leftUpperButton {
+  width: 80px;
+  height: 15px;
+  background: -webkit-linear-gradient(315deg, #fff 60%, #d8d8d8 20%);
+  background: linear-gradient(-225deg, #fff 60%, #d8d8d8 20%);
+  position: relative;
+  top: -23px;
+  left: 40px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.pomosonic .leftUpperButton span:first-child {
+  display: block;
+  position: relative;
+  top: -7px;
+  left: 33px;
+  width: 10px;
+  height: 5px;
+  background: -webkit-linear-gradient(315deg, #fff 60%, #d8d8d8 20%);
+  background: linear-gradient(-225deg, #fff 60%, #d8d8d8 20%);
+  border: 1px solid #000;
+}
+.pomosonic .leftUpperButton span:last-child {
+  display: block;
+  position: relative;
+  top: 8px;
+  left: 12px;
+  width: 55px;
+  height: 5px;
+  background: -webkit-linear-gradient(315deg, #fff 70%, #d8d8d8 20%);
+  background: linear-gradient(-225deg, #fff 70%, #d8d8d8 20%);
+  border: 1px solid #000;
+}
+.pomosonic .rightUpperButton {
+  position: relative;
+  top: -29px;
+  left: 420px;
+  width: 55px;
+  height: 10px;
+  background: -webkit-linear-gradient(315deg, #fff 60%, #d8d8d8 20%);
+  background: linear-gradient(-225deg, #fff 60%, #d8d8d8 20%);
+  border: 1px solid #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.pomosonic .leftSideButton {
+  position: relative;
+  top: 20px;
+  left: -17px;
+  width: 15px;
+  height: 80px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.pomosonic .bottomPart {
+  width: 450px;
+  height: 40px;
+  background: -webkit-linear-gradient(315deg, #fff 60%, #d8d8d8 20%);
+  background: linear-gradient(-225deg, #fff 60%, #d8d8d8 20%);
+  position: relative;
+  top: 89px;
+  left: 70px;
+  border: 1px solid #000;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pomosonic .frontPart {
+  background-color: #08080a;
+  position: relative;
+  top: -143px;
+  left: 10px;
+  width: 580px;
+  height: 180px;
+  border-radius: 15px;
+}
+.pomosonic .counter {
+  position: relative;
+  top: -447px;
+  left: 30px;
+  width: 220px;
+  height: 130px;
+  background-color: #232d37;
+  border-radius: 15px;
+}
+.pomosonic .settings {
+  color: #fff;
+  background-color: #232d37;
+  font-family: "Archivo Black", sans-serif;
+  position: relative;
+  top: -317px;
+  left: 270px;
+  width: 300px;
+  height: 130px;
+  border-radius: 15px;
+  text-align: right;
+}
+.pomosonic .settings h3 {
+  font-size: 16px;
+  position: relative;
+  top: 15px;
+  right: 10px;
+}
+.pomosonic .settings .start {
+  width: 70px;
+  height: 20px;
+  font-size: 16px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.pomosonic .settings .breakSetting {
+  text-align: left;
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 12px;
+}
+.pomosonic .settings .breakSetting .button {
+  position: relative;
+  top: -28px;
+  left: 60px;
+}
+.pomosonic .settings .breakSetting .button:last-child {
+  left: 180px;
+}
+.pomosonic .settings .sessionSetting {
+  text-align: left;
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: -15px;
+  font-size: 12px;
+}
+.pomosonic .settings .sessionSetting .button {
+  position: relative;
+  top: -28px;
+  left: 60px;
+}
+.pomosonic .settings .sessionSetting .button:last-child {
+  left: 180px;
+}
+
+.button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  width: 30px;
+  height: 20px;
+  background-color: #576676;
+}
+
+.redLine {
+  background-color: #9c4405;
+  display: block;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 67px;
+  left: 179px;
+  z-index: 10;
+}
+
+#sessionNumber {
+  font-family: "Arimo", sans-serif;
+  position: absolute;
+  top: 90px;
+  left: 172px;
+}
+
+#breakNumber {
+  font-family: "Arimo", sans-serif;
+  position: absolute;
+  top: 50px;
+  left: 176px;
+}
+
+.counter {
+  font-family: "Teko", sans-serif;
+  font-size: 130px;
+  color: #fff;
+  pointer-events: none;
+}
+.counter .minutes .upper-minute {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 45px;
+  width: 97px;
+  overflow: hidden;
+  background-color: #0d0e10;
+}
+.counter .minutes .upper-minute span {
+  position: relative;
+  top: -17px;
+}
+.counter .minutes .down-minute {
+  position: absolute;
+  top: 69px;
+  left: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 45px;
+  width: 97px;
+  overflow: hidden;
+  background-color: #0d0e10;
+}
+.counter .minutes .down-minute span {
+  position: relative;
+  top: -64px;
+}
+.counter .seconds .upper-seconds {
+  position: absolute;
+  top: 20px;
+  left: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 45px;
+  width: 97px;
+  overflow: hidden;
+  background-color: #0d0e10;
+}
+.counter .seconds .upper-seconds span {
+  position: relative;
+  top: -17px;
+}
+.counter .seconds .down-seconds {
+  position: absolute;
+  top: 69px;
+  left: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 45px;
+  width: 97px;
+  overflow: hidden;
+  background-color: #0d0e10;
+}
+.counter .seconds .down-seconds span {
+  position: relative;
+  top: -64px;
+}
+
+.highlightBreak {
+  -webkit-animation: highlightred 1.5s infinite;
+          animation: highlightred 1.5s infinite;
+}
+
+.highlightSession {
+  -webkit-animation: highlightgreen 1.5s infinite;
+          animation: highlightgreen 1.5s infinite;
+}
+
+.slideNumberRight {
+  -webkit-animation: slidingRight 0.5s ease-in-out;
+          animation: slidingRight 0.5s ease-in-out;
+}
+
+.slideNumberLeft {
+  -webkit-animation: slidingLeft 0.5s ease-in-out;
+          animation: slidingLeft 0.5s ease-in-out;
+}
+
+.flipNumbers {
+  -webkit-animation: flip 0.2s ease-out;
+          animation: flip 0.2s ease-out;
+}
+
+.heading {
+  text-align: center;
+  color: #e9301c;
+  text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+}
+.heading h1 {
+  font-size: 38px;
+}
+
+@-webkit-keyframes highlightred {
+  0% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes highlightred {
+  0% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
+}
+@-webkit-keyframes highlightgreen {
+  0% {
+    color: white;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes highlightgreen {
+  0% {
+    color: white;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: white;
+  }
+}
+@-webkit-keyframes slidingRight {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-origin: 0 0 40px;
+            transform-origin: 0 0 40px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transform-origin: 0 0 40px;
+            transform-origin: 0 0 40px;
+    opacity: 1;
+  }
+}
+@keyframes slidingRight {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-origin: 0 0 40px;
+            transform-origin: 0 0 40px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transform-origin: 0 0 40px;
+            transform-origin: 0 0 40px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slidingLeft {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-origin: 0 0 40px;
+            transform-origin: 0 0 40px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+    -webkit-transform-origin: 0 0 40px;
+            transform-origin: 0 0 40px;
+    opacity: 1;
+  }
+}
+@keyframes slidingLeft {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-origin: 0 0 40px;
+            transform-origin: 0 0 40px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+    -webkit-transform-origin: 0 0 40px;
+            transform-origin: 0 0 40px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: 0 100% 0;
+            transform-origin: 0 100% 0;
+  }
+  50% {
+    -webkit-transform: rotateX(170deg);
+            transform: rotateX(170deg);
+    -webkit-transform-origin: 0 100% 0;
+            transform-origin: 0 100% 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: 0 100% 0;
+            transform-origin: 0 100% 0;
+  }
+}
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: 0 100% 0;
+            transform-origin: 0 100% 0;
+  }
+  50% {
+    -webkit-transform: rotateX(170deg);
+            transform: rotateX(170deg);
+    -webkit-transform-origin: 0 100% 0;
+            transform-origin: 0 100% 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: 0 100% 0;
+            transform-origin: 0 100% 0;
+  }
+}
