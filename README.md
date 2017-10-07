@@ -26,3 +26,7 @@ With this one started the advanced front end projects part. Didn't used any fanc
 
 I've designed the clock according to the famous clock from the movie Groundhog Day. You know pomodoro clock is also looping around just like the movie.
 So the look was made only with CSS. Used some almost matching fonts from [GoogleFonts](https://fonts.google.com/) for the displayed numbers and for the manufacturer logo (which begins with Pana...haha). For the JS part i've used only jQuery to make DOM searches and some tasks easier.
+
+### Tic Tac Toe Game
+
+The design came from the idea how this should probably played. On a piece of paper with a marker. This was a tricky one though. For the AI was used the Minimax algorithm to calculate the best next move recurring all the possible and upcoming moves on the board.
