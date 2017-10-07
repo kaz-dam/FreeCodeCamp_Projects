@@ -1,0 +1,186 @@
+body {
+  background: -webkit-linear-gradient(left, #efdecc, #efd4b7);
+  background: linear-gradient(to right, #efdecc, #efd4b7);
+  font-family: "Open Sans", sans-serif;
+}
+body .wrapper {
+  text-align: center;
+}
+body .wrapper h1 {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+}
+body .wrapper .resetBtn {
+  font-weight: bold;
+  color: white;
+  background-color: #d2a97d;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+body .wrapper .resetBtn:hover {
+  background-color: #a2825f;
+}
+body .wrapper .game {
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+body .wrapper .game .paper {
+  position: absolute;
+  background-color: #f0f1f5;
+  width: 100%;
+  height: 350px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+body .wrapper .game .paper:first-child {
+  z-index: 1000;
+}
+body .wrapper .game .paper:nth-child(2) {
+  z-index: 500;
+  -webkit-transform: rotateZ(4deg);
+          transform: rotateZ(4deg);
+}
+body .wrapper .game .paper:nth-child(3) {
+  z-index: 300;
+  -webkit-transform: rotateZ(6deg);
+          transform: rotateZ(6deg);
+}
+body .wrapper .game .paper:last-child {
+  top: 90px;
+  left: 5px;
+  z-index: 200;
+  text-align: center;
+}
+body .wrapper .game .paper:last-child span {
+  display: block;
+  padding: 10px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+}
+body .wrapper .game .paper .lines {
+  font-family: "Permanent Marker", cursive;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .game .paper .lines .verticalLines {
+  margin: 0 auto;
+  display: block;
+  width: 95%;
+  height: 1px;
+  background-color: #ced5dd;
+  margin-top: 28%;
+}
+body .wrapper .game .paper .lines .horizontalLines {
+  position: absolute;
+  top: -105px;
+  margin-left: 34%;
+  display: block;
+  width: 1px;
+  height: 95%;
+  background-color: #ced5dd;
+}
+body .wrapper .game .paper .lines .horizontalLines:last-child {
+  left: 34%;
+}
+body .wrapper .game .paper .lines .xo {
+  font-size: 80px;
+  display: block;
+  width: 120px;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+}
+body .wrapper .game .paper .lines .xo:nth-child(1) {
+  top: -100px;
+  left: 10px;
+}
+body .wrapper .game .paper .lines .xo:nth-child(2) {
+  top: -100px;
+  left: 145px;
+}
+body .wrapper .game .paper .lines .xo:nth-child(3) {
+  top: -100px;
+  left: 275px;
+}
+body .wrapper .game .paper .lines .xo:nth-child(4) {
+  top: 7px;
+  left: 10px;
+}
+body .wrapper .game .paper .lines .xo:nth-child(5) {
+  top: 7px;
+  left: 145px;
+}
+body .wrapper .game .paper .lines .xo:nth-child(6) {
+  top: 7px;
+  left: 275px;
+}
+body .wrapper .game .paper .lines .xo:nth-child(7) {
+  top: 120px;
+  left: 10px;
+}
+body .wrapper .game .paper .lines .xo:nth-child(8) {
+  top: 120px;
+  left: 145px;
+}
+body .wrapper .game .paper .lines .xo:nth-child(9) {
+  top: 120px;
+  left: 275px;
+}
+
+.dBoxBg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.dBoxBg .dBox {
+  background-color: white;
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(40vh);
+          transform: translateY(40vh);
+}
+.dBoxBg .dBox span {
+  display: block;
+}
+.dBoxBg .dBox span:first-child {
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+.dBoxBg .dBox .chooseXo {
+  font-family: "Permanent Marker", cursive;
+  font-size: 60px;
+  display: inline-block;
+  width: 50px;
+  cursor: pointer;
+}
+.dBoxBg .dBox .chooseXo:nth-child(2) {
+  margin-right: 50px;
+}
+.dBoxBg .dBox .chooseXo:hover {
+  border-bottom: 2px solid #000;
+}
+
+.slideInUp {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
