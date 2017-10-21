@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+div.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3e3a9;
+}
+
+div.game-wrapper {
+  width: 400px;
+  height: 400px;
+  background-color: #333333;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 5px 8px rgba(0,0,0,0.7);
+}
+
+div.play-buttons {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div.play-buttons div.button {
+  width: 174px;
+  height: 130px;
+  border: 2px solid #111111;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+div.play-buttons div.button:nth-child(1) {
+  margin-right: 12px;
+}
+
+div.play-buttons div.button:nth-child(3) {
+  margin-right: 12px;
+}
+
+.green {
+  background-color: #00a74a;
+}
+
+.green:active,
+.light-green {
+  background-color: #00E25F;
+}
+
+.red {
+  background-color: #9f0f17;
+}
+
+.red:active,
+.light-red {
+  background-color: #DE1621;
+}
+
+.yellow {
+  background-color: #cca707;
+}
+
+.yellow:active,
+.light-yellow {
+  background-color: #FDCF0D;
+}
+
+.blue {
+  background-color: #094a8f;
+}
+
+.blue:active,
+.light-blue {
+  background-color: #0E6DC6;
+}
+
+div.settings {
+  background-color: #ECE7EE;
+  border-radius: 10px;
+  border: 2px solid #111111;
+  height: 100px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+div.counter,
+div.start,
+div.strict,
+div.power {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.strict {
+  justify-content: flex-start;
+  padding-top: 8px;
+}
+
+div.counter span.counts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 35px;
+  background-color: #32050C;
+  color: #DC0D29;
+  font-size: 1.4em;
+  border-radius: 5px;
+  border: 1px solid #111111;
+}
+
+div.counter h4,
+div.start h4,
+div.strict h4,
+div.power h4 {
+  margin: 5px 0 0 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 0.5em;
+}
+
+span.start-btn,
+span.strict-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid #444;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+span.start-btn:active,
+span.strict-btn:active {
+  box-shadow: 0 1px 0px rgba(0,0,0,0.6);
+}
+
+span.light {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #860101;
+  border: 1px solid #222222;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.strict-enabled {
+  background-color: #f10000 !important;
+}
+/* color when strict is enabled: #f10000 */
+
+span.start-btn {
+  background-color: #FC0102;
+}
+
+span.strict-btn {
+  background-color: yellow;
+}
+
+div.switch {
+  width: 25px;
+  height: 50px;
+  background-color: #222;
+  margin-top: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+div.switch span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #3193DE;
+  border-radius: 6px;
+  border: 2px solid #444;
+  transition: all 0.2s ease-in-out;
+}
+
+.slideUp {
+  bottom: 25px !important;
+}
+
+.slideDown {
+  bottom: 0px;
+}
