@@ -30,3 +30,7 @@ So the look was made only with CSS. Used some almost matching fonts from [Google
 ### Tic Tac Toe Game
 
 The design came from the idea how this should probably played. On a piece of paper with a marker. This was a tricky one though. For the AI was used the Minimax algorithm to calculate the best next move recurring all the possible and upcoming moves on the board.
+
+### Simon Game
+
+The design is not the well known Simon game design. Didn't wanted to create the same layout so i just went with the look of a drumpad. This was one of the projects that look very easy at first and if i get more into the details it became more complicated. I was using only jQuery on the js part.
